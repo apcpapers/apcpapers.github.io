@@ -17,7 +17,8 @@ figure img {
 }
 
 .thumbnail {
-  max-width: 500px;
+  max-width: 100%;
+  width: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;

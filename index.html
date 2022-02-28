@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>APC Engineering Papers</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMDQ9MHF73"></script>
-  <script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>APC Engineering Papers</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMDQ9MHF73"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-DMDQ9MHF73');
-  </script>  
-</head>
-<body>
-  <header>
-    <h1>APC Engineering Papers</h1>
-    <p>
-      Advanced Process Control (APC) engineering papers
-      from the Burnaby Refinery, <i>and friends!</i>
-    </p>
-  </header>
-
-  <figure class="refinery">
-    <img width="100%" src="./assets/img/burnaby.jpg"
-     alt="Burnaby Refinery night photo">
-  </figure>
-
-  <hr>
-
-  <section id="papers">
-
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>APC Engineering Papers</h1>
+      <p>
+        Advanced Process Control (APC) engineering papers
+        from the Burnaby Refinery, <i>and friends!</i>
+      </p>
+    </header>
+    <figure class="refinery">
+      <img width="100%" src="./assets/img/burnaby.jpg"
+      alt="Burnaby Refinery night photo">
+    </figure>
+    <hr>
+    <section id="papers">
       <h2> How do we make it easier to condition steady-state gain matrices? </h2>
       <i>Upcoming presentation in AIChE 2022 Spring Meeting!</i>
       <details>
-        <summary>
-          <b>A simple discretization scheme for gain matrix conditioning</b>
-          <br>
-          Daniel L. O'Connor, Lim C. Siang, Shams Elnawawi.
-          <i>7th International Symposium on Advanced Control of Industrial Processes (AdCONIP)</i>, (2022). Submitted.
-          <br>
-          <figure class="thumbnail">
-            <img src="./assets/img/2022_C1.png"
-             alt="A simple discretization scheme for gain matrix conditioning">
-          </figure>          
-        </summary>
-
-        <p>Coming soon! Upcoming presentation in AIChE 2022 Spring Meeting.</p>
-
-        <b>Abstract</b>
-        <blockquote>
-          In industrial model predictive controllers (MPCs), models generated from regression-based system identification methods typically contain small or even physically non-existent degrees of freedom.  Control issues can arise when the steady-state optimizer uses these small degrees of freedom to calculate targets for plant operation due to matrix ill-conditioning. Mathematical techniques like Relative Gain Array (RGA) and Singular Value Decomposition (SVD) are helpful for analyzing controller gain interactions and identifying conditioning issues, which can be corrected relatively easily in small models.  However, these techniques are difficult and tedious to apply for larger, more complex models. This paper describes a novel, non-iterative, RGA-based, binning technique for discretizing the gain matrix and quickly solving 2$\times$2 conditioning issues for any model size, while guaranteeing gain adjustments below a certain threshold. Higher order interactions are also discussed.
-        </blockquote>
+      <summary>
+      <b>A simple discretization scheme for gain matrix conditioning</b>
+      <br>
+      Daniel L. O'Connor, Lim C. Siang, Shams Elnawawi.
+      <i>7th International Symposium on Advanced Control of Industrial Processes (AdCONIP)</i>, (2022). Submitted.
+      <br>
+      <figure class="thumbnail">
+        <img src="./assets/img/2022_C1.png"
+        alt="A simple discretization scheme for gain matrix conditioning">
+      </figure>
+      </summary>
+      <p>Coming soon! Upcoming presentation in AIChE 2022 Spring Meeting.</p>
+      <b>Abstract</b>
+      <blockquote>
+        In industrial model predictive controllers (MPCs), models generated from regression-based system identification methods typically contain small or even physically non-existent degrees of freedom.  Control issues can arise when the steady-state optimizer uses these small degrees of freedom to calculate targets for plant operation due to matrix ill-conditioning. Mathematical techniques like Relative Gain Array (RGA) and Singular Value Decomposition (SVD) are helpful for analyzing controller gain interactions and identifying conditioning issues, which can be corrected relatively easily in small models.  However, these techniques are difficult and tedious to apply for larger, more complex models. This paper describes a novel, non-iterative, RGA-based, binning technique for discretizing the gain matrix and quickly solving 2$\times$2 conditioning issues for any model size, while guaranteeing gain adjustments below a certain threshold. Higher order interactions are also discussed.
+      </blockquote>
       </details>
-
       <h2> How do we visualize and diagnose faults in APC applications? </h2>
       <details>
-        <summary>
-          <b>Interactive visualization for diagnosis of industrial Model Predictive Controllers with steady-state optimizers</b>
-          <br>
-          Shams Elnawawi, Lim C. Siang, Daniel L. O’Connor, and R. Bhushan Gopaluni.
-          <i>Control Engineering Practice</i>, <b>121</b> (2022), 10506.
-          <a href="https://dais.chbe.ubc.ca/assets/preprints/2021J8_Elnawawi_Viz.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S0967066121003014">[URL]</a>
-          <br>
-          <figure class="thumbnail">
-            <img src="./assets/img/2022_J1.png"
-             alt="Interactive visualization paper graphical abstract">
-          </figure>
-        </summary>
-
-        <b>Abstract</b>    
-        <blockquote>
-          Model Predictive Controllers (MPCs) are widely used in the process industries and are typically implemented with an integrated Linear Program (LP) optimizer in the form of two-stage LP-MPC systems. Despite significant control-theoretic advances in MPC design and performance evaluation in academia, there is still a gap in addressing operational issues in real-world MPC controllers. In particular, engineers and operators responsible for sustaining MPCs often need to interpret the LP solution to understand the controller’s actions. Without easy interpretability, it is difficult to troubleshoot MPCs especially for large-dimensional controllers. To alleviate this difficulty, a systematic approach that facilitates LP solution diagnostics using tools from data visualization and process control is developed. The ‘partial pivoting’ operation – an industrial practice that has seen limited exposure in academic literature – is discussed in detail with regards to its role in LP solution diagnosis. Typical workflows for diagnosing problematic controllers are used in conjunction with data visualization principles to guide the design of new tools focused on visualizing variable constraint data that facilitate the diagnosis process. These proposed tools are designed using Munzner’s “Nested Model” as a guiding framework for visualization design and evaluation. The use of these tools is demonstrated in multiple industrial examples, with comparison to current industrial methodologies.
-        </blockquote>
+      <summary>
+      <b>Interactive visualization for diagnosis of industrial Model Predictive Controllers with steady-state optimizers</b>
+      <br>
+      Shams Elnawawi, Lim C. Siang, Daniel L. O’Connor, and R. Bhushan Gopaluni.
+      <i>Control Engineering Practice</i>, <b>121</b> (2022), 10506.
+      <a href="https://dais.chbe.ubc.ca/assets/preprints/2021J8_Elnawawi_Viz.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S0967066121003014">[URL]</a>
+      <br>
+      <figure class="thumbnail">
+        <img src="./assets/img/2022_J1.png"
+        alt="Interactive visualization paper graphical abstract">
+      </figure>
+      </summary>
+      <b>Abstract</b>
+      <blockquote>
+        Model Predictive Controllers (MPCs) are widely used in the process industries and are typically implemented with an integrated Linear Program (LP) optimizer in the form of two-stage LP-MPC systems. Despite significant control-theoretic advances in MPC design and performance evaluation in academia, there is still a gap in addressing operational issues in real-world MPC controllers. In particular, engineers and operators responsible for sustaining MPCs often need to interpret the LP solution to understand the controller’s actions. Without easy interpretability, it is difficult to troubleshoot MPCs especially for large-dimensional controllers. To alleviate this difficulty, a systematic approach that facilitates LP solution diagnostics using tools from data visualization and process control is developed. The ‘partial pivoting’ operation – an industrial practice that has seen limited exposure in academic literature – is discussed in detail with regards to its role in LP solution diagnosis. Typical workflows for diagnosing problematic controllers are used in conjunction with data visualization principles to guide the design of new tools focused on visualizing variable constraint data that facilitate the diagnosis process. These proposed tools are designed using Munzner’s “Nested Model” as a guiding framework for visualization design and evaluation. The use of these tools is demonstrated in multiple industrial examples, with comparison to current industrial methodologies.
+      </blockquote>
       </details>
-
       <h2> How do we leverage analytics in refining and process control? </h2>
       <details>
-        <summary>
-          <b>Self-service analytics and the processing of hydrocarbons</b>
-          <br>
-          Lim C. Siang, Shams Elnawawi, Darren Steele.
-          <i>Digital Chemical Engineering</i>, (2022). Under Review.
-          <br>         
-        </summary>
-
-        <p>Coming soon!</p>
+      <summary>
+      <b>Self-service analytics and the processing of hydrocarbons</b>
+      <br>
+      Lim C. Siang, Shams Elnawawi, Darren Steele.
+      <i>Digital Chemical Engineering</i>, (2022). Under Review.
+      <br>
+      <figure class="thumbnail">
+        <img src="./assets/img/2022_J2.png"
+        alt="Self-service analytics and the processing of hydrocarbons">
+      </figure>
+      </summary>
+      <b>Abstract</b>
+      <blockquote>
+        This paper describes the use of self-service analytics on time series process data for the troubleshooting and optimization of refinery operations in the context of data visualization principles and best practices. Refining-relevant examples are used to demonstrate how end-users can access real-time and historical process data and apply the following analytics operations across several refining functions, including (1) incident troubleshooting -- identifying periods of interest and methods available to investigate related plant data, patterns, events and disturbances leading up to the incident, and (2) data cleansing -- filtering sensor data to remove outliers and bad quality data, splicing and aligning data streams for more accurate analysis and to improve the confidence in the outputs of subsequent analysis, such as the outputs of multivariate, regression-based system identification. The paper also provides examples of how ad hoc analyses can be scaled up to plantwide analytics and evolve into routine, automated tasks. The importance of analytic provenance and collaboration in sharing new insights from data is also discussed. To address the human factors associated with self-service analytics innovation, the paper concludes with lessons learnt, observations and adaptations compared to the traditional "business-as-usual" approaches, best practices for data governance, and the implications for engineers that operate in a safety-critical environment.
+      </blockquote>
       </details>
-
-  </section>
-
-
-</body>
+    </section>
+  </body>
 </html>
