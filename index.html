@@ -27,28 +27,45 @@
     <p><small>Collaborators: <a class="spaced-links" href="https://www.controlconsulting.com/">[Control Consulting Inc]</a> <a class="spaced-links" href="https://stiperstone.com/">[Stiperstone Analytics]</a> <a class="spaced-links" href="https://dais.chbe.ubc.ca/">[UBC DAIS Lab]</a>
     <hr>
     <section id="papers">
-
       <h2> How do we make it easier to condition steady-state gain matrices? </h2>
-      
-      <i>Upcoming presentation at AdCONIP 2022!</i><br>
       <details>
         <summary>
         <b>A simple discretization scheme for gain matrix conditioning</b>
         <br>
         Daniel L. O'Connor, Lim C. Siang, Shams Elnawawi.
-        <i>7th International Symposium on Advanced Control of Industrial Processes (AdCONIP)</i>, (2022). Accepted. <a href="https://arxiv.org/abs/2202.13291">[arXiv]</a> <a href="./assets/docs/binning.pdf">[Slides]</a>
+        <i>7th International Symposium on Advanced Control of Industrial Processes (AdCONIP)</i>, (2022). To Appear. <a href="https://arxiv.org/abs/2202.13291">[arXiv]</a> <a href="./assets/docs/binning.pdf">[Slides]</a>
         <br>
         <figure class="thumbnail">
           <img src="./assets/img/2022_C1.png"
           alt="A simple discretization scheme for gain matrix conditioning">
         </figure>
         </summary>
-        <p>Coming soon! Upcoming presentation at AdCONIP 2022.</p>
+        <p>Work presented at AdCONIP 2022.</p>
         <b>Abstract</b>
         <blockquote>
           In industrial model predictive controllers (MPCs), models generated from regression-based system identification methods typically contain small or even physically non-existent degrees of freedom.  Control issues can arise when the steady-state optimizer uses these small degrees of freedom to calculate targets for plant operation due to matrix ill-conditioning. Mathematical techniques like Relative Gain Array (RGA) and Singular Value Decomposition (SVD) are helpful for analyzing controller gain interactions and identifying conditioning issues, which can be corrected relatively easily in small models.  However, these techniques are difficult and tedious to apply for larger, more complex models. This paper describes a novel, non-iterative, RGA-based, binning technique for discretizing the gain matrix and quickly solving 2$\times$2 conditioning issues for any model size, while guaranteeing gain adjustments below a certain threshold. Higher order interactions are also discussed.
         </blockquote>
       </details>
+
+      <h2> How do we integrate process knowledge in causality analysis? </h2>
+      <details>
+        <summary>
+        <b>Causal Discovery based on Observational Data and Process Knowledge in Industrial Processes</b>
+        <br>
+        Liang Cao, Jianping Su, Yixiu Wang, Yankai Cao, Lim C. Siang, Jin Li, Jack Nicholas Saddler, and Bhushan Gopaluni.
+        <i>ACS Industrial & Engineering Chemistry Research</i> (2022)
+        <a href="https://dais.chbe.ubc.ca/assets/preprints/2022J6_IECR_Cao.pdf">[PDF]</a> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.iecr.2c01326">[URL]</a>
+        <br>
+        <figure class="thumbnail">
+          <img src="./assets/img/2022_J3.png"
+          alt="Causality discovery paper graphical abstract">
+        </figure>
+        </summary>
+        <b>Abstract</b>
+        <blockquote>
+          Causal discovery approaches are gaining popularity in industrial processes. Existing causal discovery algorithms can indeed find some important causal relationships from industrial data, but, at the same time, the algorithms may also give some incorrect causal relationships. In order to deal with this problem, we give four kinds of process knowledge definitions according to the special characteristics of complex industrial processes. Causal discovery algorithms will yield more accurate results and deeper insights if the process knowledge is properly addressed. Based on commercial-scale fluid catalytic cracker unit data, we validate the effectiveness of the proposed methods with some state-of-the-art causal discovery algorithms.
+        </blockquote>
+      </details>      
 
       <h2> How do we visualize and diagnose faults in APC applications? </h2>
       <details>
@@ -131,7 +148,7 @@
       <small>
         💖 Handcrafted, artisanal website for sharing quality advanced process control (APC) engineering content. Hosted on <a href="https://github.com/apcpapers/apcpapers.github.io/">GitHub Pages</a>.
         <br>
-        📧 Contact: Siang <b>Lim</b> and Shams <b>Elnawawi</b>. Email: <i>{First Name DOT <b>Last Name</b>}@parkland.ca</i>
+        📧 Contact: Siang <b>Lim</b>: <i>{First Name DOT <b>Last Name</b>}@parkland.ca</i> and Shams <b>Elnawawi</b>: <i>{First Name DOT <b>Last Name</b>}@gmail.com</i>.
       </small>
     </footer>    
   </body>
