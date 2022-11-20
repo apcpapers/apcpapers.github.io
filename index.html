@@ -24,9 +24,28 @@
       <img width="100%" src="./assets/img/burnaby.jpg"
       alt="Night view of the Burnaby Refinery with the Burrard Inlet and mountains in the background.">
     </figure>
-    <p><small>Collaborators: <a class="spaced-links" href="https://www.controlconsulting.com/">[Control Consulting Inc]</a> <a class="spaced-links" href="https://stiperstone.com/">[Stiperstone Analytics]</a> <a class="spaced-links" href="https://dais.chbe.ubc.ca/">[UBC DAIS Lab]</a>
+    <p><small>Collaborators: <a class="spaced-links" href="https://www.controlconsulting.com/">[Control Consulting Inc]</a> <a class="spaced-links" href="https://stiperstone.com/">[Stiperstone Analytics]</a> <a class="spaced-links" href="https://dais.chbe.ubc.ca/">[UBC DAIS Lab]</a> <a class="spaced-links" href="https://www.linkedin.com/in/leerippon/?originalSubdomain=ca">[Spartan Controls]</a>
     <hr>
     <section id="papers">
+      <h2> How do we pre-process and clean industrial datasets? </h2>
+      <details>
+        <summary>
+        <b>Data Quality Over Quantity: Pitfalls and Guidelines for Process Analytics</b>
+        <br>
+        Lim C. Siang, Shams Elnawawi, Lee D. Rippon, Daniel L. O'Connor, R. Bhushan Gopaluni.
+        <i>Submitted to the IFAC World Congress (2023)</i>. <a href="https://arxiv.org/abs/2211.06440">[arXiv]</a>
+        <br>
+        <figure class="thumbnail">
+          <img src="./assets/img/2022_IFAC.png"
+          alt="How do we prepare and clean data for process analytics">
+        </figure>
+        </summary>
+        <b>Abstract</b>
+        <blockquote>
+          A significant portion of the effort involved in advanced process control, process analytics, and machine learning involves acquiring and preparing data. The published literature often emphasizes increasingly complex modeling techniques with incremental performance improvements. However, when industrial case studies are published they often lack important details on data acquisition and preparation. Although data pre-processing is often unfairly maligned as trivial and technically uninteresting, in practice it has an out-sized influence on the success of real-world artificial intelligence applications. This work describes best practices for acquiring and preparing operating data to pursue data-driven modelling and control opportunities in industrial processes. We present practical considerations for pre-processing industrial time series data to inform the efficient development of reliable soft sensors that provide valuable process insights.
+        </blockquote>
+      </details>
+
       <h2> How do we make it easier to condition steady-state gain matrices? </h2>
       <details>
         <summary>
@@ -47,13 +66,33 @@
         </blockquote>
       </details>
 
+      <h2> How do we visualize and diagnose faults in APC applications? </h2>
+      <details>
+        <summary>
+        <b>Interactive visualization for diagnosis of industrial Model Predictive Controllers with steady-state optimizers</b>
+        <br>
+        Shams Elnawawi, Lim C. Siang, Daniel L. O’Connor, and R. Bhushan Gopaluni.
+        <i>Control Engineering Practice</i>, <b>Vol. 121</b> (2022), 10506.
+        <a href="https://dais.chbe.ubc.ca/assets/preprints/2021J8_Elnawawi_Viz.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S0967066121003014">[URL]</a>
+        <br>
+        <figure class="thumbnail">
+          <img src="./assets/img/2022_J1.png"
+          alt="Interactive visualization paper graphical abstract">
+        </figure>
+        </summary>
+        <b>Abstract</b>
+        <blockquote>
+          Model Predictive Controllers (MPCs) are widely used in the process industries and are typically implemented with an integrated Linear Program (LP) optimizer in the form of two-stage LP-MPC systems. Despite significant control-theoretic advances in MPC design and performance evaluation in academia, there is still a gap in addressing operational issues in real-world MPC controllers. In particular, engineers and operators responsible for sustaining MPCs often need to interpret the LP solution to understand the controller’s actions. Without easy interpretability, it is difficult to troubleshoot MPCs especially for large-dimensional controllers. To alleviate this difficulty, a systematic approach that facilitates LP solution diagnostics using tools from data visualization and process control is developed. The ‘partial pivoting’ operation – an industrial practice that has seen limited exposure in academic literature – is discussed in detail with regards to its role in LP solution diagnosis. Typical workflows for diagnosing problematic controllers are used in conjunction with data visualization principles to guide the design of new tools focused on visualizing variable constraint data that facilitate the diagnosis process. These proposed tools are designed using Munzner’s “Nested Model” as a guiding framework for visualization design and evaluation. The use of these tools is demonstrated in multiple industrial examples, with comparison to current industrial methodologies.
+        </blockquote>
+      </details>      
+
       <h2> How do we integrate process knowledge in causality analysis? </h2>
       <details>
         <summary>
         <b>Causal Discovery based on Observational Data and Process Knowledge in Industrial Processes</b>
         <br>
         Liang Cao, Jianping Su, Yixiu Wang, Yankai Cao, Lim C. Siang, Jin Li, Jack Nicholas Saddler, and Bhushan Gopaluni.
-        <i>ACS Industrial & Engineering Chemistry Research</i> (2022)
+        <i>ACS Industrial & Engineering Chemistry Research</i>, <b>Vol. 61</b> (2022), 14272–14283.
         <a href="https://dais.chbe.ubc.ca/assets/preprints/2022J6_IECR_Cao.pdf">[PDF]</a> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.iecr.2c01326">[URL]</a>
         <br>
         <figure class="thumbnail">
@@ -67,26 +106,6 @@
         </blockquote>
       </details>      
 
-      <h2> How do we visualize and diagnose faults in APC applications? </h2>
-      <details>
-        <summary>
-        <b>Interactive visualization for diagnosis of industrial Model Predictive Controllers with steady-state optimizers</b>
-        <br>
-        Shams Elnawawi, Lim C. Siang, Daniel L. O’Connor, and R. Bhushan Gopaluni.
-        <i>Control Engineering Practice</i>, <b>121</b> (2022), 10506.
-        <a href="https://dais.chbe.ubc.ca/assets/preprints/2021J8_Elnawawi_Viz.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S0967066121003014">[URL]</a>
-        <br>
-        <figure class="thumbnail">
-          <img src="./assets/img/2022_J1.png"
-          alt="Interactive visualization paper graphical abstract">
-        </figure>
-        </summary>
-        <b>Abstract</b>
-        <blockquote>
-          Model Predictive Controllers (MPCs) are widely used in the process industries and are typically implemented with an integrated Linear Program (LP) optimizer in the form of two-stage LP-MPC systems. Despite significant control-theoretic advances in MPC design and performance evaluation in academia, there is still a gap in addressing operational issues in real-world MPC controllers. In particular, engineers and operators responsible for sustaining MPCs often need to interpret the LP solution to understand the controller’s actions. Without easy interpretability, it is difficult to troubleshoot MPCs especially for large-dimensional controllers. To alleviate this difficulty, a systematic approach that facilitates LP solution diagnostics using tools from data visualization and process control is developed. The ‘partial pivoting’ operation – an industrial practice that has seen limited exposure in academic literature – is discussed in detail with regards to its role in LP solution diagnosis. Typical workflows for diagnosing problematic controllers are used in conjunction with data visualization principles to guide the design of new tools focused on visualizing variable constraint data that facilitate the diagnosis process. These proposed tools are designed using Munzner’s “Nested Model” as a guiding framework for visualization design and evaluation. The use of these tools is demonstrated in multiple industrial examples, with comparison to current industrial methodologies.
-        </blockquote>
-      </details>
-
       <h2> How do we leverage analytics in refining and process control? </h2>
       <p>Analytics Cheatsheets: 
         <a class="spaced-links" href="https://github.com/csianglim/spotfire-cheatsheet">[Spotfire]</a> <a class="spaced-links" href="https://github.com/csianglim/seeq">[Seeq]</a>
@@ -96,7 +115,7 @@
         <b>Self-service analytics and the processing of hydrocarbons</b>
         <br>
         Lim C. Siang, Shams Elnawawi, Darren Steele.
-        <i>Digital Chemical Engineering</i>, <b>3</b> (2022), 100021. <a href="./assets/docs/2022_J2.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S2772508122000126">[URL]</a> <a href="https://vimeo.com/646018545">[IChemE Presentation]</a> <a href="https://engage.seeq.com/conneqt-2022/home/self-service-analytics-for-processing-of-hydrocarbons---parkland-refinery">[Conneqt Presentation]</a>
+        <i>Digital Chemical Engineering</i>, <b>Vol. 3</b> (2022), 100021. <a href="./assets/docs/2022_J2.pdf">[PDF]</a> <a href="https://www.sciencedirect.com/science/article/pii/S2772508122000126">[URL]</a> <a href="https://vimeo.com/646018545">[IChemE Presentation]</a> <a href="https://engage.seeq.com/conneqt-2022/home/self-service-analytics-for-processing-of-hydrocarbons---parkland-refinery">[Conneqt Presentation]</a>
         <br>
         <figure class="thumbnail">
           <img src="./assets/img/2022_J2.png"
